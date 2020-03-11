@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>LOGIN</title>
+        <style type="text/css">
+            body
+            {
+                background-color: lightblue;
+            }
+        </style>
     </head>
     <body>
     	<center>
