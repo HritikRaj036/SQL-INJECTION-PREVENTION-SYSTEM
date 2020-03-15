@@ -7,6 +7,10 @@
             {
                 background-color: lightblue;
             }
+            input
+            {
+                margin: 10px;
+            }
         </style>
     </head>
     <body>
