@@ -7,6 +7,10 @@
 	    	{
 	    		background-color: lightblue;
 	    	}
+	    	input
+	    	{
+	    		margin: 10px;
+	    	}
 	    </style>
     </head>
     <body>
@@ -16,7 +20,7 @@
 		        <input type="text" name="email" placeholder="Enter email"/>
 		        <br><input type="password" name="password" placeholder="Enter password"/>
 		        <br><input type="submit" name="Register" value="submit"/>
-	            </form>
+	        </form>
 	    </center>
     </body>
 </html>
