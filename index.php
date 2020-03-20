@@ -20,6 +20,8 @@
     	        <input type="text" name="email" placeholder="Enter email"/>
     	        <br/><input type="password" name="password" placeholder="Enter password"/>
     	        <br/><input type="submit" name="submit" value="login"/>
+                <br><h3>New User?</h3>
+                <a class="btn btn-primary" href="registration.php" role="button">Sign Up</a>
             </form>
         </center>
     </body>
