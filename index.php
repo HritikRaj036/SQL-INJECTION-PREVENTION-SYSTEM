@@ -12,11 +12,25 @@
                 margin: 10px;
             }
         </style>
+        <script>
+            function Validation()
+            {
+                var result = true;
+                var e = document.getElementsByName("email")[0].value;
+                var atindex = e.indexOf('@');
+                var dotindex = e.lastIndexOf('.');
+                if(atindex<1 || dotindex>=e.length-2 || dotindex-atindex<3)
+                {
+                     result = false;
+                }
+                return result;
+            }   
+        </script>
     </head>
     <body>
     	<center>
     		<h1>Login Here</h1>
-            <form method="post" action="">
+            <form method="post" action="" onsubmit="return Validation()">
     	        <input type="text" name="email" placeholder="Enter email" required />
     	        <br/><input type="password" name="password" placeholder="Enter password" required />
     	        <br/><input type="submit" name="submit" value="login"/>
