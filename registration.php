@@ -2,7 +2,6 @@
 <html>
     <head>
 	    <title>Registration Page</title>
-	    <script src="Form_Validation.js"></script>
 	    <style type="text/css">
 	    	body
 	    	{
@@ -12,7 +11,23 @@
 	    	{
 	    		margin: 10px;
 	    	}
+
 	    </style>
+	    <script>
+	    	function Validation()
+            {
+	            var result = true;
+	            var e = document.getElementsByName("email")[0].value;
+                var atindex = e.indexOf('@');
+                var dotindex = e.lastIndexOf('.');
+	            if(atindex<1 || dotindex>=e.length-2 || dotindex-atindex<3)
+	            {
+		             result = false;
+	            }
+	            return result;
+            }	
+	
+	    </script>
     </head>
     <body>
 	    <center>
