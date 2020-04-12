@@ -2,6 +2,7 @@
 <html>
     <head>
 	    <title>Registration Page</title>
+	    <script src="Form_Validation.js"></script>
 	    <style type="text/css">
 	    	body
 	    	{
@@ -16,7 +17,7 @@
     <body>
 	    <center>
 		    <h1>Register Here</h1>
-		    <form method="post" action="connect.php">
+		    <form method="post" action="connect.php" onsubmit="return Validation()">
 		        <input type="text" name="email" placeholder="Enter email"/>
 		        <br><input type="password" name="password" placeholder="Enter password"/>
 		        <br><input type="submit" name="Register" value="Register"/>
